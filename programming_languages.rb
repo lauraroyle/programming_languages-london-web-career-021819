@@ -12,12 +12,12 @@ def reformat_languages(languages)
          end
          #then we can start to build the new has from the bottom up
           new_hash[language][:style] ||= [] #creates empty array for style value
-          new_hash[language][:style] << oo_or_functional
+          new_hash[language][:style] << oo_or_functional #shovels in element from first iteration
          if
            new_hash[language][type].nil?
-           new_hash[language][type] = {}
+           new_hash[language][type] = {} #created empty array for type
          end
-           new_hash[language][type] = string
+           new_hash[language][type] = string #adds string value
        end
     end
   end
