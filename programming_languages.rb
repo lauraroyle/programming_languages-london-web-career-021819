@@ -16,9 +16,10 @@ def reformat_languages(languages)
          if
            new_hash[language][type].nil?
            new_hash[language][type] = {}
-           binding.pry
          end
+           new_hash[language][type] << string
        end
     end
   end
+  new_hash
 end
